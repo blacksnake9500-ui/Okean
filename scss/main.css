@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+header video {
+  width: 100%;
+  z-index: -3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+header nav {
+  z-index: 9;
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+  color: white;
+}
+header nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header nav .container ul li {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header nav .container ul li :hover {
+  color: #012e4d;
+}
+header nav .container ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #012e4d;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+header nav .container ul li:hover::after {
+  width: 100%;
+}
+header .hero .container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  gap: 300px;
+  color: white;
+}
+header .hero .container .card {
+  width: 642px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  z-index: 999;
+}
+header .hero .container .card h1 {
+  font-size: 64px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+header .hero .container .card button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.322);
+  border-left: none;
+  border-right: none;
+  animation: borders 3s linear infinite;
+  gap: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header .hero .container .card button:hover {
+  transform: scale(1.1);
+}
+header .hero .container .card button:active {
+  transform: scale(0.9);
+}
+header .hero .container .card .circle {
+  width: 120px;
+  height: 120px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 100px;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .hero .container .card .circle:hover {
+  transform: scale(1.05);
+}
+header .hero .container .card .circle:active {
+  transform: scale(0.9);
+}
+header .hero .container .card .circle i {
+  font-size: 40px;
+}
+
+.s1 {
+  background-color: #0f1922;
+}
+.s1 .container {
+  padding: 50px 0px;
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s1 .container .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}
+.s1 .container .box1 .card1 {
+  width: 292px;
+}
+.s1 .container .box1 .card1 img {
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.s1 .container .box1 .card1 img:hover {
+  transform: scale(1.1);
+}
+.s1 .container .box1 .card2 {
+  width: 292px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.s1 .container .box1 .card2:hover {
+  transform: scale(1.1);
+}
+.s1 .container .box2 {
+  width: 500px;
+  color: white;
+}
+.s1 .container .box2 .title {
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.s1 .container .box2 .title p {
+  border: none;
+}
+.s1 .container .box2 p {
+  padding-bottom: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  border-left: 3px solid #0097ff;
+  padding: 10px 30px;
+}
+.s1 .container .box2 button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.322);
+  border-left: none;
+  border-right: none;
+  gap: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.s1 .container .box2 button:hover {
+  transform: scale(1.1);
+}
+.s1 .container .box2 button:active {
+  transform: scale(0.9);
+}
+
+.s2 {
+  background-color: #012e4d;
+}
+.s2 .container {
+  padding: 50px 0px;
+}
+.s2 .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.s2 .container .title .arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.s2 .container .title .arrow i {
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+.s2 .container .title .arrow i:hover {
+  transform: scale(1.1);
+}
+.s2 .container .title .arrow i:active {
+  transform: scale(0.9);
+}
+.s2 .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s2 .container .box .card {
+  width: 268px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.s2 .container .box .card:hover {
+  transform: scale(1.1);
+}
+.s2 .container .box .card:active {
+  transform: scale(0.9);
+}
+.s2 .container .box .card img {
+  width: 100%;
+}
+
+.s3 {
+  background-color: #0f1922;
+}
+.s3 .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.s3 .container .box1 {
+  color: white;
+  width: 500px;
+}
+.s3 .container .box1 .title {
+  padding-bottom: 20px;
+}
+.s3 .container .box1 p {
+  padding-bottom: 20px;
+}
+.s3 .container .box1 .info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  border-left: 1px solid #0097ff;
+}
+.s3 .container .box1 .info .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.s3 .container .box1 .info .card h2 p {
+  font-weight: 300;
+  font-size: 15px;
+}
+.s3 .container .box1 button {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.144);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.s3 .container .box1 button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.s3 .container .box1 button:active {
+  transform: scale(0.9);
+}
+.s3 .container .box2 .card1 {
+  width: 500px;
+}
+.s3 .container .box2 .card1 img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.s3 .container .box2 .card1 img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.s3 .container .box2 .card1 img:active {
+  transform: scale(0.9);
+}
+.s3 .container .box2 .card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s3 .container .box2 .card2 img {
+  transition: all 0.3s ease;
+}
+.s3 .container .box2 .card2 img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.s3 .container .box2 .card2 img:active {
+  transform: scale(0.9);
+}
+.s3 .container .box2 .card2 {
+  gap: 20px;
+}
+.s3 .container .box2 .card2 .stage1 {
+  width: 202px;
+}
+.s3 .container .box2 .card2 .stage1 img {
+  width: 100%;
+}
+.s3 .container .box2 .card2 .stage2 {
+  width: 223px;
+}
+.s3 .container .box2 .card2 .stage2 img {
+  width: 100%;
+}
+
+.s4 {
+  background-color: #012e4d;
+}
+.s4 .container {
+  padding: 50px 0px;
+  color: white;
+}
+.s4 .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s4 .container .title .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.s4 .container .title .arrow i {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.s4 .container .title .arrow i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.s4 .container .title .arrow i:active {
+  transform: scale(0.9);
+}
+.s4 .container .title .arrow i::after {
+  content: "";
+  width: 100%;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.3s ease;
+  animation: borders 1s linear infinite;
+}
+@keyframes borders {
+  0% {
+    border: 2px solid black;
+  }
+  25% {
+    border-top: 3px solid black;
+  }
+  50% {
+    border-right: 2px solid red;
+  }
+  75% {
+    border-bottom: 2px solid black;
+  }
+  100% {
+    border-left: 2px solid red;
+  }
+}
+.s4 .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.s4 .container .box .card {
+  width: 406px;
+  padding: 50px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+  border-top: 1px solid rgba(255, 255, 255, 0.589);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.068);
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.s4 .container .box .card:hover {
+  transform: scale(1.03);
+}
+.s4 .container .box .card:active {
+  transform: scale(0.9);
+}
+.s4 .container .box .card .user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.s4 .container .box .card .user h3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.s5 {
+  background-image: url("../imgs/s5 bg img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.s5 .container {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s5 .container .card {
+  color: white;
+}
+.s5 .container .card h1 {
+  font-weight: 400;
+}
+.s5 .container form {
+  padding: 5px 15px;
+  border-radius: 10px;
+  width: 465px;
+  background-color: rgba(255, 255, 255, 0.151);
+  backdrop-filter: blur(5px);
+}
+.s5 .container form input {
+  width: 300px;
+  padding: 15px 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+.s5 .container form label {
+  color: white;
+}
+.s5 .container form button {
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: #0f1922;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+footer .container .card {
+  color: white;
+}
+footer .container .card h2 {
+  font-weight: 400;
+  padding: 10px;
+}
+footer .container .card p {
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+footer .container .card .app {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.692);
+  padding-top: 20px;
+}
+footer .container .links {
+  display: flex;
+  align-items: start;
+  gap: 220px;
+}
+footer .container .links ul {
+  color: white;
+  line-height: 40px;
+}
+footer .container .links ul li {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer .container .links ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #0097ff;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+}
+footer .container .links ul li:hover::after {
+  width: 100%;
+}
+footer .container .links ul li h2 {
+  padding-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */
